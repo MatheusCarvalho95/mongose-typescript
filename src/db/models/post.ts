@@ -15,9 +15,3 @@ const PostSchema: Schema = new Schema(
 );
 
 export default mongoose.model<IPost>("Post", PostSchema);
-
-export const OnlineStatusPostSchema = mongoose.connection.model(
-  "Post",
-  PostSchema,
-  "post",
-);
